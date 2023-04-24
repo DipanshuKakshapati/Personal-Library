@@ -12,15 +12,15 @@
 
     <form method="POST" action="{{ url_for('index') }}">
       <label>User Name:</label>
-      <input type="text" autocomplete="off" name="user_name"><br><br>
+      <input type="text" autocomplete="off" name="user_name" required><br><br>
       <label>Book Name:</label>
-      <input type="text" autocomplete="off" name="book_name"><br><br>
+      <input type="text" autocomplete="off" name="book_name" required><br><br>
       <label>Author Name:</label>
-      <input type="text" autocomplete="off" name="author_name"><br><br>
+      <input type="text" autocomplete="off" name="author_name" required><br><br>
       <label>Genre:</label>
-      <input type="text" autocomplete="off" name="genre"><br><br>
+      <input type="text" autocomplete="off" name="genre" required><br><br>
       <label>Rating:</label>
-      <input type="text" autocomplete="off" name="rating"><br><br>
+      <input type="text" autocomplete="off" name="rating" placeholder="Out of 5" pattern="[1-5]" required><br><br>
       <div class="add_button">
         <input type="submit" value ="Add Book">
       </div>
